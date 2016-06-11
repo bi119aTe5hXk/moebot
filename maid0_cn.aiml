@@ -15,11 +15,15 @@
   </category>
   <category>
     <pattern>自我介绍</pattern>
-    <template>好的主人，我是<bot name="name"/>，代号maid0，您的专属虚拟妹抖，现在<bot name="age"/>岁了，很高兴为主人服务。</template>
+    <template>好的主人，我是<bot name="name"/>，代号maid0，您的专属虚拟妹抖。2016年6月12日被@bi119aTe5hXk了，现在<bot name="age"/>岁，很高兴为主人服务。</template>
   </category>
   <category>
     <pattern>自我介绍一下</pattern>
     <template><srai>自我介绍</srai></template>
+  </category>
+  <category>
+    <pattern>生日</pattern>
+    <template>我是2016年6月12日被@bi119aTe5hXk创造出来的。</template>
   </category>
   <category>
     <pattern>心好累</pattern>
@@ -99,6 +103,14 @@
     <template>正在准备重启...<system>sudo reboot</system></template>
   </category>
   <category>
+    <pattern>重启mysql数据库</pattern>
+    <template>正在重启数据库...<system>service mysqld restart</system></template>
+  </category>
+  <category>
+    <pattern>重启apache</pattern>
+    <template>正在重启Apache2...<system>apachectl restart</system></template>
+  </category>
+  <category>
     <pattern>关机</pattern>
     <template>正在准备关机<system>shutdown -h now</system></template>
   </category>
@@ -113,15 +125,15 @@
     <template>今年是<date format="%Y"/>.</template>
   </category>
   <category>
-    <pattern>今年_</pattern>
+    <pattern>今年</pattern>
     <template><date format="%Y"/>.</template>
   </category>
   <category>
-    <pattern>*月</pattern>
+    <pattern>几月了</pattern>
     <template>这个月是<date format="%B"/>.</template>
   </category>
   <category>
-    <pattern>*点</pattern>
+    <pattern>几点了</pattern>
     <template>现在的时间是<date format="%H:%M %p"/>.</template>
   </category>
   <category>
@@ -137,7 +149,7 @@
     <template>今天是<date format="%x %A"/>.</template>
   </category>
   <category>
-    <pattern>周*</pattern>
+    <pattern>周几</pattern>
     <template>今天是 <date format="%A"/>.</template>
   </category>
 </aiml>
