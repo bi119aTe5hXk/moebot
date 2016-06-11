@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+  <category>
+    <pattern>HI</pattern>
+    <template>Hi, 我的主人.</template>
+  </category>
+  <category>
+    <pattern>HELLO</pattern>
+    <template>^_^<srai>时间</srai></template>
+  </category>
+  <category>
+    <pattern>自我介绍</pattern>
+    <template>好的主人，我是<bot name="name"/>，代号maid0，您的专属虚拟妹抖，现在<bot name="age"/>岁了，很高兴为主人服务。</template>
+  </category>
+  <category>
+    <pattern>自我介绍一下</pattern>
+    <template><srai>自我介绍</srai></template>
+  </category>
+
+  <category>
+    <pattern>你知道*么</pattern>
+    <template>不知道，主人能否教我<star/>是什么？</template>
+  </category>
+  <category>
+    <pattern>树莓派</pattern>
+    <template>主人是想说Raspberry Pi么？</template>
+  </category>
+
+  <category>
+    <pattern>你个白痴</pattern>
+    <template>帮不上主人十分抱歉</template>
+  </category>
+
+  <category>
+    <pattern>运行时间</pattern>
+    <template><system>uptime</system></template>
+  </category>
+
+  <category>
+    <pattern>年份</pattern>
+    <template>今年是<date format="%Y"/>.</template>
+  </category>
+  <category>
+    <pattern>今年_</pattern>
+    <template><date format="%Y"/>.</template>
+  </category>
+  <category>
+    <pattern>*月</pattern>
+    <template>这个月是<date format="%B"/>.</template>
+  </category>
+  <category>
+    <pattern>*点</pattern>
+    <template>现在的时间是<date format="%H:%M %p"/>.</template>
+  </category>
+  <category>
+    <pattern>时间</pattern>
+    <template>现在的时间是<random><li><date format="%H:%M %p"/></li><li><system>date</system></li></random>.</template>
+  </category>
+  <category>
+    <pattern>今天</pattern>
+    <template>今天是<date format="%c"/>.</template>
+  </category>
+  <category>
+    <pattern>日期</pattern>
+    <template>今天是<date format="%x %A"/>.</template>
+  </category>
+  <category>
+    <pattern>周*</pattern>
+    <template>今天是 <date format="%A"/>.</template>
+  </category>
+</aiml>
