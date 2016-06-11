@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
+  <!-- 日常 -->
   <category>
-    <!-- 日常 -->
     <pattern>HI</pattern>
-    <template>Hi, 我的主人.</template>
+    <template>Hi, 我的主人。</template>
+  </category>
+  <category>
+    <pattern>HEY</pattern>
+    <template>请吩咐。</template>
   </category>
   <category>
     <pattern>HELLO</pattern>
@@ -25,9 +29,10 @@
     <pattern>买买买</pattern>
     <template>今天的工作完成了么？</template>
   </category>
+  
 
   <category>
-    <pattern>没有</pattern>
+    <pattern>还没</pattern>
     <that>今天的工作完成了么？</that>
     <template>那还不赶紧去工作？-_-#</template>
   </category>
@@ -49,16 +54,60 @@
 
   <!-- 骂人 -->
   <category>
+    <pattern>白痴</pattern>
+    <template><random><li>帮不上主人十分抱歉。</li><li>非常抱歉，请主人原谅。</li></random></template>
+  </category>
+  <category>
     <pattern>你个白痴</pattern>
-    <template>帮不上主人十分抱歉</template>
+    <template><srai>白痴</srai></template>
+  </category>
+  <category>
+    <pattern>FUCK</pattern>
+    <template><srai>白痴</srai></template>
+  </category>
+  <category>
+    <pattern>SHIT</pattern>
+    <template><srai>白痴</srai></template>
   </category>
 
-  <!-- 查询/操作 -->
+
+  <!-- 无聊 -->
+  <category>
+    <pattern>嗷呜</pattern>
+    <template>请不要进行无意义的嚎叫。</template>
+  </category>
+
+  <!-- 操作 -->
   <category>
     <pattern>运行时间</pattern>
     <template><system>uptime</system></template>
   </category>
+  <category>
+    <pattern>换root</pattern>
+    <template>正在更换用户root...<system>sudo -s</system></template>
+  </category>
+  <category>
+    <pattern>debian更新</pattern>
+    <template>正在更新...<system>sudo apt-get update</system></template>
+  </category>
+  <category>
+    <pattern>debian升级</pattern>
+    <template>正在升级...<system>sudo apt-get upgrade</system></template>
+  </category>
+  <category>
+    <pattern>重启</pattern>
+    <template>正在准备重启...<system>sudo reboot</system></template>
+  </category>
+  <category>
+    <pattern>关机</pattern>
+    <template>正在准备关机<system>shutdown -h now</system></template>
+  </category>
+  <category>
+    <pattern>执行命令*</pattern>
+    <template>正在执行<system><star/></system></template>
+  </category>
 
+  <!-- 日期/时间 -->
   <category>
     <pattern>年份</pattern>
     <template>今年是<date format="%Y"/>.</template>
