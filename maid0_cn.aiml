@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
   <category>
+    <!-- 日常 -->
     <pattern>HI</pattern>
     <template>Hi, 我的主人.</template>
   </category>
@@ -17,6 +18,7 @@
     <template><srai>自我介绍</srai></template>
   </category>
 
+  <!-- 提问 -->
   <category>
     <pattern>你知道*么</pattern>
     <template>不知道，主人能否教我<star/>是什么？</template>
@@ -26,11 +28,13 @@
     <template>主人是想说Raspberry Pi么？</template>
   </category>
 
+  <!-- 骂人 -->
   <category>
     <pattern>你个白痴</pattern>
     <template>帮不上主人十分抱歉</template>
   </category>
 
+  <!-- 查询/操作 -->
   <category>
     <pattern>运行时间</pattern>
     <template><system>uptime</system></template>
