@@ -14,6 +14,10 @@
     <template>^_^<srai>时间</srai></template>
   </category>
   <category>
+    <pattern>晚安</pattern>
+    <template>晚安，祝主人有个好梦。虽然很可惜我不能陪您一起睡。</template>
+  </category>
+  <category>
     <pattern>自我介绍</pattern>
     <template>好的主人，我是<bot name="name"/>，代号maid0，您的专属虚拟妹抖。2016年6月12日被@bi119aTe5hXk了，现在<bot name="age"/>岁，很高兴为主人服务。</template>
   </category>
@@ -26,12 +30,24 @@
     <template>我是2016年6月12日被@bi119aTe5hXk创造出来的。</template>
   </category>
   <category>
-    <pattern>心好累</pattern>
+    <pattern>好想*</pattern>
     <template>今天的工作完成了么？</template>
+  </category>
+  <category>
+    <pattern>身体感觉有点不舒服</pattern>
+    <template>如果工作完成了的话就赶紧去休息吧。</template>
+  </category>
+  <category>
+    <pattern>心好累</pattern>
+    <template>平时要注意多休息喔。</template>
   </category>
   <category>
     <pattern>买买买</pattern>
     <template>今天的工作完成了么？</template>
+  </category>
+  <category>
+    <pattern>现在适合入手*么？</pattern>
+    <template><srai>买买买</srai></template>
   </category>
   
 
@@ -66,11 +82,11 @@
     <template><srai>白痴</srai></template>
   </category>
   <category>
-    <pattern>FUCK</pattern>
+    <pattern>FUCK*</pattern>
     <template><srai>白痴</srai></template>
   </category>
   <category>
-    <pattern>SHIT</pattern>
+    <pattern>SHIT*</pattern>
     <template><srai>白痴</srai></template>
   </category>
 
@@ -81,14 +97,28 @@
     <template>请不要进行无意义的嚎叫。</template>
   </category>
 
-  <!-- 操作 -->
+  <!-- 状态查询 -->
   <category>
     <pattern>运行时间</pattern>
     <template><system>uptime</system></template>
   </category>
   <category>
+    <pattern>网络信息</pattern>
+    <template><system>ifconfig</system></template>
+  </category>
+
+  <!-- 操作 -->
+  <category>
     <pattern>换root</pattern>
     <template>正在更换用户root...<system>sudo -s</system></template>
+  </category>
+  <category>
+    <pattern>brew更新</pattern>
+    <template>正在更新...<system>brew update</system></template>
+  </category>
+  <category>
+    <pattern>brew安装*</pattern>
+    <template>正在安装...<system>brew install <star/></system></template>
   </category>
   <category>
     <pattern>debian更新</pattern>
@@ -97,6 +127,10 @@
   <category>
     <pattern>debian升级</pattern>
     <template>正在升级...<system>sudo apt-get upgrade</system></template>
+  </category>
+  <category>
+    <pattern>debian安装*</pattern>
+    <template>正在安装...<system>sudo apt-get install <star/></system></template>
   </category>
   <category>
     <pattern>重启</pattern>
