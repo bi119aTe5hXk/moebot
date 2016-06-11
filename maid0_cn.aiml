@@ -14,8 +14,20 @@
     <template>^_^<srai>时间</srai></template>
   </category>
   <category>
+    <pattern>早上好</pattern>
+    <template>早上好，主人。今天也也一起加油吧！</template>
+  </category>
+  <category>
+    <pattern>早</pattern>
+    <template><srai>早上好</srai></template>
+  </category>
+  <category>
     <pattern>晚安</pattern>
     <template>晚安，祝主人有个好梦。虽然很可惜我不能陪您一起睡。</template>
+  </category>
+  <category>
+    <pattern>安</pattern>
+    <template><srai>晚安</srai></template>
   </category>
   <category>
     <pattern>自我介绍</pattern>
