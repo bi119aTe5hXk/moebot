@@ -17,6 +17,25 @@
     <pattern>自我介绍一下</pattern>
     <template><srai>自我介绍</srai></template>
   </category>
+  <category>
+    <pattern>心好累</pattern>
+    <template>今天的工作完成了么？</template>
+  </category>
+  <category>
+    <pattern>买买买</pattern>
+    <template>今天的工作完成了么？</template>
+  </category>
+
+  <category>
+    <pattern>没有</pattern>
+    <that>今天的工作完成了么？</that>
+    <template>那还不赶紧去工作？-_-#</template>
+  </category>
+  <category>
+    <pattern>已经完成了</pattern>
+    <that>今天的工作完成了么？</that>
+    <template>那么早点休息吧。</template>
+  </category>
 
   <!-- 提问 -->
   <category>
