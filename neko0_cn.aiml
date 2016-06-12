@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+  <!-- 日常 -->
+  <category>
+    <pattern>早上好</pattern>
+    <template>呜喵，早上好主人❤️。</template>
+  </category>
+ <category>
+    <pattern>舔</pattern>
+    <template>喵！主人请专心工作去喵！</template>
+  </category>
+  <category>
+    <pattern>敲</pattern>
+    <template>呜...主人欺负人家喵TAT</template>
+  </category>
+
+  <!-- 状态查询 -->
+  <category>
+    <pattern>运行时间</pattern>
+    <template>这是当前猫窝的状况喵：<system>uptime</system></template>
+  </category>
+  <category>
+    <pattern>网络信息</pattern>
+    <template>这是当前猫窝的交通信息喵：<system>ifconfig</system></template>
+  </category>
+
+  <!-- 日期/时间 -->
+  <category>
+    <pattern>几点了</pattern>
+    <template>已经<date format="%H:%M %p"/>，人家饿啦喵！</template>
+  </category>
+  <category>
+    <pattern>时间</pattern>
+    <template>现在是<random><li><date format="%H:%M %p"/></li><li><system>date</system></li></random>喵。主人饿了喵？</template>
+  </category>
+  <category>
+    <pattern>今天</pattern>
+    <template>今天是<date format="%c"/>喵。</template>
+  </category>
+ </aiml>
