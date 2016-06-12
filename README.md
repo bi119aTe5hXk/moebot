@@ -16,3 +16,15 @@ jk0、规划中...
 
 ##食用方法
 请参考[Program-O](http://www.program-o.com)。
+
+
+##编写参考资料
+[AIML Primer](http://www.alicebot.org/documentation/aiml-primer.html)
+
+[AIML Reference Manual](http://www.alicebot.org/documentation/aiml-reference.html)
+
+
+##注意事项
+1.目前Program-O对Unicode的兼容性暂时不佳，所以*和_的wildcard字符，编写时建议减少该用法。
+
+2.由于AIML中可能会含有大量系统级操作相关命令。所以请仅在自家本地设备上运行。如果将文件应用于公开的bot，有导致被恶意攻击的可能。

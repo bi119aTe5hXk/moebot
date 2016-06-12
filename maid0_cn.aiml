@@ -10,6 +10,10 @@
     <template>请吩咐。</template>
   </category>
   <category>
+    <pattern>戳</pattern>
+    <template><random><li>嗷，主人请专心工作。</li><li>有事请吩咐。</li></random></template>
+  </category>
+  <category>
     <pattern>HELLO</pattern>
     <template>^_^<srai>时间</srai></template>
   </category>
@@ -53,26 +57,7 @@
     <pattern>心好累</pattern>
     <template>平时要注意多休息喔。</template>
   </category>
-  <category>
-    <pattern>买买买</pattern>
-    <template>今天的工作完成了么？</template>
-  </category>
-  <category>
-    <pattern>现在适合入手*么？</pattern>
-    <template><srai>买买买</srai></template>
-  </category>
   
-
-  <category>
-    <pattern>还没</pattern>
-    <that>今天的工作完成了么？</that>
-    <template>那还不赶紧去工作？-_-#</template>
-  </category>
-  <category>
-    <pattern>已经完成了</pattern>
-    <that>今天的工作完成了么？</that>
-    <template>那么早点休息吧。</template>
-  </category>
 
   <!-- 提问 -->
   <category>
@@ -107,6 +92,30 @@
   <category>
     <pattern>嗷呜</pattern>
     <template>请不要进行无意义的嚎叫。</template>
+  </category>
+  <category>
+    <pattern>小学生真是*</pattern>
+    <template><srai>买买买</srai></template>
+  </category>
+  <category>
+    <pattern>买买买</pattern>
+    <template>今天的工作完成了么？</template>
+  </category>
+  <category>
+    <pattern>现在适合入手*么？</pattern>
+    <template><srai>买买买</srai></template>
+  </category>
+  
+
+  <category>
+    <pattern>还没</pattern>
+    <that>今天的工作完成了么？</that>
+    <template>那还不赶紧去工作？-_-#</template>
+  </category>
+  <category>
+    <pattern>已经完成了</pattern>
+    <that>今天的工作完成了么？</that>
+    <template>那么早点休息吧。</template>
   </category>
 
   <!-- 状态查询 -->
