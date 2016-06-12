@@ -3,7 +3,7 @@
   <!-- 日常 -->
   <category>
     <pattern>早上好</pattern>
-    <template>早上好主人❤️。</template>
+    <template>早上好，欧尼酱❤️。</template>
   </category>
  <category>
     <pattern>舔</pattern>
@@ -11,7 +11,7 @@
   </category>
   <category>
     <pattern>敲</pattern>
-    <template>呜...主人欺负人家TAT</template>
+    <template>呜...欧尼酱欺负人家TAT</template>
   </category>
 
   <!-- 状态查询 -->
@@ -31,7 +31,7 @@
   </category>
   <category>
     <pattern>时间</pattern>
-    <template>现在<random><li><date format="%H:%M %p"/></li><li><system>date</system></li></random>。主人，人家的点心在哪？</template>
+    <template>现在<random><li><date format="%H:%M %p"/></li><li><system>date</system></li></random>。欧尼酱，人家的点心在哪？</template>
   </category>
   <category>
     <pattern>今天</pattern>
